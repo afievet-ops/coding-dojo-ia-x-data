@@ -12,6 +12,15 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "commitizen>=4.7.0",
     "pre-commit>=4.2.0",
     "rust-just>=1.40.0",
 ]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+tag_format = "v$version"
+version_scheme = "semver"
+update_changelog_on_bump = true
+major_version_zero = true
